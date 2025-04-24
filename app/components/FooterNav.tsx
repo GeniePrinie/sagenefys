@@ -15,11 +15,11 @@ export default function FooterNav() {
         </div>
         <div className="col-start-1 col-span-full md:col-start-6 md:col-span-5 pb-8">
           <p className="font-semibold">Telefon</p>
-          <p className="text-blue-600">900 00 000</p>
+          <p className="text-blue-600">+ 47 22 23 26 90</p>
         </div>
         <div className="col-start-1 col-span-full md:col-start-6 md:col-span-5 pb-8">
           <p className="font-semibold">Adresse</p>
-          <p className="text-blue-600">Sagene Fysioterapi & Trening</p>
+          <p className="text-blue-600">Stavangergata 40, 0467 Oslo</p>
         </div>
         <div className="col-start-1 col-span-full md:col-start-6 md:col-span-5 pb-8">
           <p className="font-semibold">Følg oss</p>
