@@ -13,7 +13,7 @@ export default function AboutPage() {
         </h2>
         <div className="col-start-1 col-span-full md:col-span-7 pb-8 md:pb-12">
           <Image
-            src="/images/hero.jpg"
+            src="/images/about.jpg"
             alt="Hero image"
             width={1000}
             height={1000}

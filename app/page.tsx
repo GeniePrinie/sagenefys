@@ -1,8 +1,18 @@
 import Container from "./components/ui/Container";
 import Image from "next/image";
+
 export default function Home() {
   return (
-    <>
+    <Container>
+      {/* Test element to check color system */}
+      <div className="my-8 p-4 rounded bg-blue-100 text-blue-600">
+        <h2 className="text-2xl font-bold">Color Test Element</h2>
+        <p>
+          This element uses the bg-blue-100 and text-blue-600 utility classes
+          directly
+        </p>
+      </div>
+
       <Image
         src="/images/hero.jpg"
         alt="Hero image"
@@ -25,6 +35,6 @@ export default function Home() {
           </p>
         </div>
       </Container>
-    </>
+    </Container>
   );
 }

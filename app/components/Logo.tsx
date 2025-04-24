@@ -6,7 +6,7 @@ interface LogoProps {
   className?: string;
 }
 
-const Logo: React.FC<LogoProps> = ({ className = "" }) => {
+const Logo: React.FC<LogoProps> = () => {
   return (
     <svg
       width="150"

@@ -4,41 +4,55 @@
     "title": "Behandling av idrettsskader",
     "slug": "behandling-av-idrettsskader",
     "description": "BBehandlere ved Drøbakgata Fysioterapi  har gjennom mange år opparbeidet seg lang erfaring og bred kompetanse i behandling av idrettsutøvere. Idrettsskader er skader i muskel- og skjelettskader som typisk oppstår i forbindelse med idrett. Disse skadene kan dog også ses hos  ikke-idrettsutøvere. Disse skadene kalles idrettsskader fordi de hyppigst oppstår i forbindelse med idrett. Idrettsskader kan oppstå akutt eller kronisk, som følge av akutt  skade, overbelastning over tid, slitasje eller som følge av for stor treningsmengde. Vanlige idrettsskader kan for eksempel være muskelstrekk, forstuelser,  senebetennelser, tretthetsbrudd, leddskader eller skader av leddbånd.",
-    "img": "/images/services/service-1.jpg"
+    "img": "/images/services/service-1.jpg",
+    "link": ""
   },
   {
     "id": 2,
     "title": "Frisklivstrening",
     "slug": "frisklivstrening",
     "description": "Frisklivstrening tilbys ved klinikken for deg som trenger motivasjon og veiledning for å komme i gang med fysisk aktivitet.  Fysisk aktivitet gir deg overskudd, bedre humør, og forebygger en rekke sykdommer. Ønsker du å komme i gang med fysisk aktivitet, men er litt usikker på hvordan?",
-    "img": "/images/services/service-2.jpg"
+    "img": "/images/services/service-2.jpg",
+    "link": ""
   },
   {
     "id": 3,
     "title": "Fysioterapi",
     "slug": "terapeutisk-trening",
     "description": "Hva behandler en fysioterapeut? Idrettsskader, forstuvninger, belastningslidelser, postoperativ behandling, ryggsmerter, senebetennelser, muskelfestebetennelser, bekkenløsning, isjas, hoftesmerter, knesmerter, fot/ankel/håndleddsmerter,hodepine, kjevesmerter, nakkesmerter, armsmerter, skuldersmerter, smerter mellom skulderbladene, brystsmerter med mer er vanlige lidelser som behandles av fysioterapi. ",
-    "img": "/images/services/service-3.jpg"
+    "img": "/images/services/service-3.jpg",
+    "link": ""
   },
   {
     "id": 4,
     "title": "Manuell terapi",
     "slug": "Manuell-terapi",
     "description": "Manuellterapeuter er spesialister på muskel- og skjelettsystemet. Manuellterapeuter undersøker, vurderer og behandler plager i muskel-/skjelettsystemet for å gjenopprette eller bedre kroppens funksjoner. De kan differensialdiagnostisere, det vil si skille mellom sykdommer i muskel- og skjelett og andre farlige sykdommer med samme symptomer (for eksempel brudd, skader, kreft eller inflammasjon). I undersøkelsen kan manuellterapeuten rekvirere bildediagnostikk (røntgen/MR/CT) og henvise til undersøkelse i spesialisthelsetjenesten, operasjon eller fysioterapeut. Manuellterapeut kan også sykmelde.",
-    "img": "/images/services/service-4.jpg"
+    "img": "/images/services/service-4.jpg",
+    "link": ""
   },
   {
     "id": 5,
     "title": "Opptrening og rehabilitering etter skader og operasjoner",
     "slug": "opptrening-og-rehabilitering-etter-skader-og-operasjoner",
     "description": "Fysioterapeuten eller manuellterapeuten skreddersyr et individuelt og konkret behandlingsopplegg.  Vi har lang erfaring med opptrening og rehabilitering etter akutte skader, belastningsrelaterte og kroniske lidelser, samt etter ortopediske operasjoner. Ved Drøbakgata Fysioterapi  er aktiv rehabilitering/trening en viktig behandlingsmetode og  blir vektlagt i all form for tilnærming. Aktivitetsmedisin er godt dokumentert vitenskapelig, og vi mener det vil gi deg som pasient den beste forutsetningen for å bli frisk/skadefri og uavhengig av videre oppfølging av behandlere. Vi setter deg som pasient i sentrum for å finne og hjelpe deg med dine behov.",
-    "img": "/images/services/service-5.jpg"
+    "img": "/images/services/service-5.jpg",
+    "link": ""
   },
   {
     "id": 6,
     "title": "Trykkbølgebehandling",
     "slug": "trykkbolgebehandling",
     "description": "Trykkbølgebehandling (ESWT) har vist seg å være en trygg og effektiv behandlingsform for en rekke kroniske tendinopatier. Akillestendinose, plantar fasciitt, jumpers knee, kalkskulder og tennisalbue er eksempler på noen av tilstandene som kan behandles effektivt ved hjelp av trykkbølge. Trykkbølgebehandling brukes som et alternativt behandlingsverktøy i forbindelse med vedvarende smerte i sener og bindevev som ikke har respondert på konservativ behandling. Trykkbølgebehandling kan i mange tilfeller erstatte kortisoninjeksjon eller kirurgi. Dersom man sliter med smerter på grunn av en langvarig seneskade man ikke blir kvitt, eller en skade som stadig blusser opp igjen kan trykkbølge være behandlingsmetoden som får skaden til å «løsne» og gir varige resultater.",
-    "img": "/images/services/service-6.jpg"
+    "img": "/images/services/service-6.jpg",
+    "link": ""
+  },
+  {
+    "id": 7,
+    "title": "Terapibasseng trening ved Sagene bad",
+    "slug": "Terapibasseng-trening-ved-sagene-bad",
+    "description": "Skånsom trening med fysioterapeut i oppvarmet basseng ved Sagene bad",
+    "img": "/images/services/service-7.jpg",
+    "link": "https://sagenefolkebad.no/"
   }
 ]

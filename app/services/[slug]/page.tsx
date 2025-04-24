@@ -10,8 +10,13 @@ export function generateStaticParams() {
   }));
 }
 
-export default function ServicePage({ params }: { params: { slug: string } }) {
-  const service = services.find((s) => s.slug === params.slug);
+interface PageProps {
+  params: Promise<{ slug: string }>;
+}
+
+export default async function ServicePage({ params }: PageProps) {
+  const { slug } = await params;
+  const service = services.find((s) => s.slug === slug);
 
   if (!service) {
     notFound();
@@ -22,7 +27,7 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
       <h1 className="col-start-1 col-span-full md:col-span-5 text-xl font-semibold pb-8">
         <Link
           href="/services"
-          className="text-blue-600 hover:underline cursor-pointer"
+          className="text-custom-blue-600 hover:underline cursor-pointer"
         >
           Tjenester
         </Link>
