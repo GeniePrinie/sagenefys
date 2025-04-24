@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function AboutPage() {
   return (
     <Container padding="default" className="py-24">
-      <h1 className="col-start-1 col-span-full md:col-span-5 text-xl font-semibold pb-8">
+      <h1 className="col-start-1 col-span-full md:col-span-5 text-3xl font-semibold pb-8">
         Om oss
       </h1>
       <div className="grid grid-cols-12">

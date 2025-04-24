@@ -11,7 +11,7 @@ import people from "../data/people.json";
 
 export default function TeamPage() {
   return (
-    <Container padding="default" className="py-16">
+    <Container padding="default" className="py-24">
       <h1 className="col-start-1 col-span-full md:col-span-5 text-3xl font-semibold pb-8">
         Fysioterapeuter
       </h1>
@@ -31,9 +31,7 @@ export default function TeamPage() {
               </div>
 
               <div className="flex-1 md:max-w-xl lg:max-w-2xl">
-                <p className="text-sagene-blue text-lg mb-1">
-                  {person.position}
-                </p>
+                <p className="text-primary text-lg mb-1">{person.position}</p>
                 <h2 className="text-[2.5rem] leading-tight font-semibold mb-8">
                   {person.firstName} {person.lastName}
                 </h2>
@@ -67,7 +65,7 @@ export default function TeamPage() {
                       <span className="font-medium">Email: </span>
                       <a
                         href={`mailto:${person.email}`}
-                        className="text-sagene-blue hover:underline"
+                        className="text-primary hover:underline"
                       >
                         {person.email}
                       </a>
@@ -76,7 +74,7 @@ export default function TeamPage() {
                       <span className="font-medium">Telefon: </span>
                       <a
                         href={`tel:${person.phone}`}
-                        className="text-sagene-blue hover:underline"
+                        className="text-primary hover:underline"
                       >
                         {person.phone}
                       </a>
@@ -99,7 +97,7 @@ export default function TeamPage() {
             </div>
 
             {/* Add divider line except after the last item */}
-            {index < people.length - 1 && <hr className="border-sagene-blue" />}
+            {index < people.length - 1 && <hr className="border-primary" />}
           </div>
         ))}
       </div>

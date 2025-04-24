@@ -6,7 +6,7 @@ import services from "../data/services.json";
 export default function ServicesPage() {
   return (
     <Container padding="default" className="py-24">
-      <h1 className="col-start-1 col-span-full md:col-span-5 text-xl font-semibold pb-8 text-blue-600 bg-blue-100">
+      <h1 className="col-start-1 col-span-full md:col-span-5 text-3xl font-semibold pb-8">
         Tjenester
       </h1>
 

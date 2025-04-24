@@ -7,12 +7,19 @@ import { usePathname } from "next/navigation";
 
 export default function HeaderNav() {
   const pathname = usePathname();
+  const isHomePage = pathname === "/";
 
   return (
     <Container padding="default">
-      <div className="h-24 flex justify-between items-center py-20 border-b border-sagene-blue">
-        <div className="flex items-center gap-4">
-          <LogoSquare />
+      <div
+        className={`h-24 flex justify-between items-center py-20 ${
+          !isHomePage ? "border-b border-primary" : ""
+        }`}
+      >
+        <div className="flex items-center gap-11">
+          <Link href="/">
+            <LogoSquare />
+          </Link>
           <Link href="/" className="text-xl">
             Sagene Fysioterapi
           </Link>
@@ -21,8 +28,10 @@ export default function HeaderNav() {
           <div>
             <Link
               href="/physioterapists"
-              className={`font-semibold hover:text-sagene-blue hover:underline underline-offset-2 ${
-                pathname === "/physioterapists" ? "text-sagene-blue" : ""
+              className={`hover:text-primary hover:underline underline-offset-2 ${
+                pathname === "/physioterapists"
+                  ? "text-primary font-medium"
+                  : "font-normal"
               }`}
             >
               Fysioterapeuter
@@ -31,8 +40,10 @@ export default function HeaderNav() {
           <div>
             <Link
               href="/about"
-              className={`text-black hover:text-sagene-blue hover:underline underline-offset-2 ${
-                pathname === "/about" ? "text-sagene-blue" : ""
+              className={`text-black hover:text-primary hover:underline underline-offset-2 ${
+                pathname === "/about"
+                  ? "text-primary font-medium"
+                  : "font-normal"
               }`}
             >
               Om oss
@@ -41,8 +52,10 @@ export default function HeaderNav() {
           <div>
             <Link
               href="/contact"
-              className={`text-black hover:text-sagene-blue hover:underline underline-offset-2 ${
-                pathname === "/contact" ? "text-sagene-blue" : ""
+              className={`text-black hover:text-primary hover:underline underline-offset-2 ${
+                pathname === "/contact"
+                  ? "text-primary font-medium"
+                  : "font-normal"
               }`}
             >
               Kontakt
@@ -51,8 +64,10 @@ export default function HeaderNav() {
           <div>
             <Link
               href="/services"
-              className={`text-black hover:text-sagene-blue hover:underline underline-offset-2 ${
-                pathname === "/services" ? "text-sagene-blue" : ""
+              className={`text-black hover:text-primary hover:underline underline-offset-2 ${
+                pathname === "/services"
+                  ? "text-primary font-medium"
+                  : "font-normal"
               }`}
             >
               Tjenester

@@ -1,25 +1,32 @@
 import Container from "./components/ui/Container";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <Container>
-      {/* Test element to check color system */}
-      <div className="my-8 p-4 rounded bg-blue-100 text-blue-600">
-        <h2 className="text-2xl font-bold">Color Test Element</h2>
-        <p>
-          This element uses the bg-blue-100 and text-blue-600 utility classes
-          directly
-        </p>
+    <>
+      <div className="relative">
+        <Image
+          src="/images/hero.jpg"
+          alt="Hero image"
+          width={1000}
+          height={1000}
+          className="w-full h-auto"
+        />
+        <div className="absolute bottom-24 left-8 md:left-24 z-10">
+          <h2 className="text-5xl font-semibold text-on-primary mb-6">
+            Et team med erfarne
+            <br />
+            terapeuter
+          </h2>
+          <Link
+            href="/contact"
+            className="inline-flex items-center px-6 py-3 bg-muted-fg text-on-primary rounded-full hover:bg-opacity-90 transition-all"
+          >
+            Ta Kontakt
+          </Link>
+        </div>
       </div>
-
-      <Image
-        src="/images/hero.jpg"
-        alt="Hero image"
-        width={1000}
-        height={1000}
-        className="w-full h-auto"
-      />
       <Container padding="default" className="py-24">
         <div className="grid grid-cols-12">
           <h1 className="col-start-1 col-span-full md:col-span-5 uppercase text-lg">
@@ -35,6 +42,6 @@ export default function Home() {
           </p>
         </div>
       </Container>
-    </Container>
+    </>
   );
 }

@@ -3,7 +3,7 @@ import Container from "../components/ui/Container";
 export default function ContactPage() {
   return (
     <Container padding="default" className="py-24">
-      <h1 className="col-start-1 col-span-full md:col-span-5 text-xl font-semibold pb-8">
+      <h1 className="col-start-1 col-span-full md:col-span-5 text-3xl font-semibold pb-8">
         Kontakt
       </h1>
       <div className="grid grid-cols-12">
