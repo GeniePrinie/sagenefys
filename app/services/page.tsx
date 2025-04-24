@@ -10,14 +10,14 @@ export default function ServicesPage() {
         Tjenester
       </h1>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-24 col-span-full">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-24 col-span-full mt-2">
         {services.map((service) => (
           <div key={service.id} className="flex flex-col h-full">
             <Link
               href={`/services/${service.slug}`}
               className="group flex-grow"
             >
-              <div className="relative h-64 w-full mb-4 overflow-hidden rounded-md">
+              <div className="relative h-96 w-full mb-4 overflow-hidden">
                 <Image
                   src={service.img}
                   alt={service.title}
@@ -35,7 +35,7 @@ export default function ServicesPage() {
             </Link>
             <div className="mt-4">
               <Link href={`/services/${service.slug}`}>
-                <span className="inline-flex items-center px-8 py-2 bg-custom-blue-600 text-white rounded-full font-medium hover:bg-custom-blue-900 transition-colors">
+                <span className="inline-flex items-center px-8 py-2 bg-custom-blue-600 text-white font-medium hover:bg-custom-blue-900 transition-colors">
                   Ser mer <span className="ml-2">→</span>
                 </span>
               </Link>

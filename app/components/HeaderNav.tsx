@@ -12,7 +12,7 @@ export default function HeaderNav() {
   return (
     <Container padding="default">
       <div
-        className={`h-24 flex justify-between items-center py-20 ${
+        className={`h-24 flex justify-between items-center pt-[85px] pb-24 ${
           !isHomePage ? "border-b border-primary" : ""
         }`}
       >

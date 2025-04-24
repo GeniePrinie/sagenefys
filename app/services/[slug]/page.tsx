@@ -37,13 +37,13 @@ export default async function ServicePage({ params }: PageProps) {
           {service.title}
         </h2>
 
-        <div className="col-start-1 col-span-full md:col-span-7 pb-8 md:pb-12 relative h-[400px]">
+        <div className="col-start-1 col-span-full md:col-span-7 mb-10 pb-8 md:pb-12 relative h-[500px]">
           <Image
             src={service.img}
             alt={service.title}
             fill
             sizes="(max-width: 768px) 100vw, 50vw"
-            className="object-cover rounded-lg"
+            className="object-cover"
             priority
           />
         </div>
