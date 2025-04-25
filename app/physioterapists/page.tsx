@@ -7,10 +7,11 @@ import {
   CollapsibleTrigger,
 } from "../components/ui/collapsible";
 import Container from "../components/ui/Container";
+import PageHeader from "../components/ui/PageHeader";
 import people from "../data/people.json";
 import { useState } from "react";
 
-export default function TeamPage() {
+export default function PhysiotherapistsPage() {
   const [openStates, setOpenStates] = useState<boolean[]>(
     Array(people.length).fill(false)
   );
@@ -24,10 +25,8 @@ export default function TeamPage() {
   };
 
   return (
-    <Container padding="default" className="py-24">
-      <h1 className="col-start-1 col-span-full md:col-span-5 text-3xl font-semibold pb-8">
-        Fysioterapeuter
-      </h1>
+    <Container padding="default">
+      <PageHeader title="Fysioterapeuter" />
 
       <div className="grid grid-cols-1 col-span-full">
         {people.map((person, index) => (
@@ -45,7 +44,7 @@ export default function TeamPage() {
 
               <div className="flex-1 md:max-w-xl lg:max-w-2xl">
                 <p className="text-primary text-lg mb-1">{person.position}</p>
-                <h2 className="text-[2.5rem] leading-tight font-semibold mb-8">
+                <h2 className="text-4xl leading-tight font-normal tracking-tighter mb-8">
                   {person.firstName} {person.lastName}
                 </h2>
 

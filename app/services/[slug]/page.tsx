@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import services from "../../data/services.json";
 import { notFound } from "next/navigation";
+import PageHeader from "@/app/components/ui/PageHeader";
 
 export function generateStaticParams() {
   return services.map((service) => ({
@@ -23,15 +24,8 @@ export default async function ServicePage({ params }: PageProps) {
   }
 
   return (
-    <Container padding="default" className="py-24">
-      <h1 className="col-start-1 col-span-full md:col-span-5 text-3xl font-semibold pb-8 text-primary">
-        <Link
-          href="/services"
-          className="text-custom-blue-600 hover:underline cursor-pointer"
-        >
-          Tjenester
-        </Link>
-      </h1>
+    <Container padding="default">
+      <PageHeader title="Tjenester" linkPath="/services" />
       <div className="grid grid-cols-12">
         <h2 className="col-start-1 col-span-full md:col-span-5 uppercase text-lg pb-8 md:pb-0">
           {service.title}

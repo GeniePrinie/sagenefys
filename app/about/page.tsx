@@ -1,12 +1,11 @@
 import Container from "../components/ui/Container";
 import Image from "next/image";
+import PageHeader from "../components/ui/PageHeader";
 
 export default function AboutPage() {
   return (
-    <Container padding="default" className="py-24">
-      <h1 className="col-start-1 col-span-full md:col-span-5 text-3xl font-semibold pb-8">
-        Om oss
-      </h1>
+    <Container padding="default">
+      <PageHeader title="Om oss" />
       <div className="grid grid-cols-12">
         <h2 className="col-start-1 col-span-full md:col-span-5 uppercase text-lg pb-8 md:pb-0">
           Et team med erfarne terapeuter

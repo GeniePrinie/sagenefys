@@ -1,11 +1,10 @@
 import Container from "../components/ui/Container";
+import PageHeader from "../components/ui/PageHeader";
 
 export default function ContactPage() {
   return (
-    <Container padding="default" className="py-24">
-      <h1 className="col-start-1 col-span-full md:col-span-5 text-3xl font-semibold pb-8">
-        Kontakt
-      </h1>
+    <Container padding="default">
+      <PageHeader title="Kontakt" />
       <div className="grid grid-cols-12">
         <h2 className="col-start-1 col-span-full md:col-span-5 uppercase text-lg pb-8 md:pb-0">
           Her finner du oss{" "}

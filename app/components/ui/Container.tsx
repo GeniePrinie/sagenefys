@@ -5,7 +5,7 @@ export const styledContainer = tv({
   base: "w-full mx-auto max-w-[1600px]",
   variants: {
     padding: {
-      default: "px-2 md:px-8 lg:px-12",
+      default: "px-2 pt-10 md:px-8 lg:px-12",
 
       none: "",
     },

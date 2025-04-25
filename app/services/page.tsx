@@ -1,14 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import Container from "../components/ui/Container";
+import PageHeader from "../components/ui/PageHeader";
 import services from "../data/services.json";
 
 export default function ServicesPage() {
   return (
-    <Container padding="default" className="py-24">
-      <h1 className="col-start-1 col-span-full md:col-span-5 text-3xl font-semibold pb-8">
-        Tjenester
-      </h1>
+    <Container padding="default">
+      <PageHeader title="Tjenester" />
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-24 col-span-full mt-2">
         {services.map((service) => (
