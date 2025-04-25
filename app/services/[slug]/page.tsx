@@ -1,9 +1,8 @@
-import Container from "../../components/ui/Container";
-import Image from "next/image";
-import Link from "next/link";
-import services from "../../data/services.json";
-import { notFound } from "next/navigation";
 import PageHeader from "@/app/components/ui/PageHeader";
+import Image from "next/image";
+import { notFound } from "next/navigation";
+import Container from "../../components/ui/Container";
+import services from "../../data/services.json";
 
 export function generateStaticParams() {
   return services.map((service) => ({
