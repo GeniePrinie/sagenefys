@@ -43,7 +43,7 @@ export default function Home() {
       </Container>
       <Container className="py-24">
         <div className="grid grid-cols-12">
-          <h1 className="col-start-1 col-span-full md:col-span-5 uppercase text-lg">
+          <h1 className="col-start-1 col-span-full md:col-span-5 uppercase text-lg pb-4 md:pb-0">
             Hos sagene fysioterapi
           </h1>
 
