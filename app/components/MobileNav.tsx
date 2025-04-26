@@ -1,7 +1,8 @@
 "use client";
 
-import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
+import CustomLink from "./ui/Link";
 
 const menuItems = [
   { text: "Hjem", path: "/" },
@@ -12,6 +13,7 @@ const menuItems = [
 ];
 
 export default function MobileNav() {
+  const pathname = usePathname();
   const [open, setOpen] = useState(false);
 
   return (
@@ -52,14 +54,14 @@ export default function MobileNav() {
         {/* Menu List */}
         <nav className="flex flex-col gap-6 pt-24 pl-8">
           {menuItems.map((item) => (
-            <Link
+            <CustomLink
               key={item.text}
               href={item.path}
-              className="text-lg font-normal hover:font-medium hover:text-primary active:text-primary active:font-medium"
+              isActive={pathname === item.path}
               onClick={() => setOpen(false)}
             >
               {item.text}
-            </Link>
+            </CustomLink>
           ))}
         </nav>
       </div>
