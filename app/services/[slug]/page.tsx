@@ -1,8 +1,8 @@
 import PageHeader from "@/app/components/ui/PageHeader";
-import Image from "next/image";
 import { notFound } from "next/navigation";
 import Container from "../../components/ui/Container";
 import services from "../../data/services.json";
+import ContentGrid from "../../components/ui/ContentGrid";
 
 export function generateStaticParams() {
   return services.map((service) => ({
@@ -29,26 +29,17 @@ export default async function ServicePage({ params }: PageProps) {
         linkPath="/services"
         linkClassName="text-primary"
       />
-      <div className="grid grid-cols-12">
-        <h2 className="col-start-1 col-span-full md:col-span-5 uppercase text-lg pb-8 md:pb-0">
-          {service.title}
-        </h2>
-
-        <div className="col-start-1 col-span-full md:col-span-7 mb-10 pb-8 md:pb-12 relative h-[500px]">
-          <Image
-            src={service.img}
-            alt={service.title}
-            fill
-            sizes="(max-width: 768px) 100vw, 50vw"
-            className="object-cover"
-            priority
-          />
-        </div>
-
-        <p className="col-start-1 col-span-full md:col-start-6 md:col-span-6">
-          {service.description}
-        </p>
-      </div>
+      <ContentGrid
+        title={service.title}
+        image={{
+          src: service.img,
+          alt: service.title,
+          fill: true,
+          sizes: "(max-width: 768px) 100vw, 50vw",
+          priority: true,
+        }}
+        description={service.description}
+      />
     </Container>
   );
 }
