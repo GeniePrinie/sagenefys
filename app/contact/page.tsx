@@ -1,5 +1,6 @@
 import Container from "../components/ui/Container";
 import PageHeader from "../components/ui/PageHeader";
+import CustomLink from "../components/ui/Link";
 
 export default function ContactPage() {
   return (
@@ -7,7 +8,7 @@ export default function ContactPage() {
       <PageHeader title="Kontakt" />
       <div className="grid grid-cols-12">
         <h2 className="col-start-1 col-span-full md:col-span-5 uppercase text-lg pb-8 md:pb-0">
-          Her finner du oss{" "}
+          Her finner du oss
         </h2>
 
         <p className="col-start-1 col-span-full md:col-start-6 md:col-span-6 pb-8">
@@ -17,7 +18,12 @@ export default function ContactPage() {
         </p>
         <div className="col-start-1 col-span-full md:col-start-6 md:col-span-5 pb-8">
           <p className="font-semibold">E-post</p>
-          <p className="text-blue-600">info@sagene-fysioterapi.no</p>
+          <CustomLink
+            href="mailto:info@sagene-fysioterapi.no"
+            className="text-blue-600"
+          >
+            info@sagene-fysioterapi.no
+          </CustomLink>
         </div>
         <div className="col-start-1 col-span-full md:col-start-6 md:col-span-5 pb-8">
           <p className="font-semibold">Telefon</p>
@@ -25,7 +31,14 @@ export default function ContactPage() {
         </div>
         <div className="col-start-1 col-span-full md:col-start-6 md:col-span-5 pb-8">
           <p className="font-semibold">Adresse</p>
-          <p className="text-blue-600">Stavangergata 40, 0467 Oslo</p>
+          <CustomLink
+            href="https://www.google.com/maps/place/Stavangergata+40,+0467+Oslo,+Norway"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600"
+          >
+            Stavangergata 40, 0467 Oslo
+          </CustomLink>
         </div>
 
         {/* Google Map */}

@@ -1,4 +1,5 @@
 import Container from "./ui/Container";
+import CustomLink from "./ui/Link";
 
 const FACEBOOK_URL = "https://www.facebook.com/drobakgatafysio";
 
@@ -11,7 +12,12 @@ export default function FooterNav() {
         </div>
         <div className="col-start-1 col-span-full md:col-start-6 md:col-span-5 pb-8">
           <p className="font-semibold">E-post</p>
-          <p className="text-blue-600">info@sagene-fysioterapi.no</p>
+          <CustomLink
+            href="mailto:info@sagene-fysioterapi.no"
+            className="text-blue-600"
+          >
+            info@sagene-fysioterapi.no
+          </CustomLink>
         </div>
         <div className="col-start-1 col-span-full md:col-start-6 md:col-span-5 pb-8">
           <p className="font-semibold">Telefon</p>
@@ -19,18 +25,25 @@ export default function FooterNav() {
         </div>
         <div className="col-start-1 col-span-full md:col-start-6 md:col-span-5 pb-8">
           <p className="font-semibold">Adresse</p>
-          <p className="text-blue-600">Stavangergata 40, 0467 Oslo</p>
+          <CustomLink
+            href="https://www.google.com/maps/place/Stavangergata+40,+0467+Oslo,+Norway"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600"
+          >
+            Stavangergata 40, 0467 Oslo
+          </CustomLink>
         </div>
         <div className="col-start-1 col-span-full md:col-start-6 md:col-span-5 pb-8">
           <p className="font-semibold">Følg oss</p>
-          <a
+          <CustomLink
             href={FACEBOOK_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-600 hover:underline"
+            className="text-blue-600"
           >
             Facebook
-          </a>
+          </CustomLink>
         </div>
       </div>
     </Container>
