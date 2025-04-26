@@ -180,3 +180,8 @@ body {
   transition-duration: 0.3s;
   transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
 }
+
+.bg-opacity-90 {
+  --tw-bg-opacity: 0.92;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
