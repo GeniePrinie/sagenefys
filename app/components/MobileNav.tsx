@@ -21,7 +21,7 @@ export default function MobileNav() {
       {/* Mobile menu button */}
       <div className="flex md:hidden">
         <button
-          className="md:hidden relative top-0 right-6 z-50 bg-muted-fg text-white rounded-full px-4 py-2"
+          className="md:hidden relative top-0 right-0 z-50 bg-muted-fg text-white rounded-full px-4 py-2"
           onClick={() => setOpen(true)}
           aria-label="Open menu"
         >
@@ -45,7 +45,7 @@ export default function MobileNav() {
       >
         {/* Close button */}
         <button
-          className="absolute top-6 right-8 bg-muted-fg text-white rounded-full px-4 py-2 mt-6.5"
+          className="absolute top-6 right-4 bg-muted-fg text-white rounded-full px-4 py-2 mt-6.5"
           onClick={() => setOpen(false)}
           aria-label="Close menu"
         >
