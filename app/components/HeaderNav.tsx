@@ -22,7 +22,7 @@ export default function HeaderNav() {
           <CustomLink href="/">
             <LogoSquare />
           </CustomLink>
-          <CustomLink href="/" className="hidden lg:block text-xl">
+          <CustomLink href="/" className="hidden lg:block text-xl" noHover>
             Sagene Fysioterapi
           </CustomLink>
         </div>
