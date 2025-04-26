@@ -89,7 +89,7 @@ export default function PhysiotherapistsPage() {
                   </CollapsibleContent>
 
                   <CollapsibleTrigger asChild>
-                    <button className="text-black font-medium underline-offset-4 underline focus:outline-none mt-2">
+                    <button className="text-black font-medium underline-offset-4 underline focus:outline-none mt-2 cursor-pointer hover:text-primary transition-colors">
                       {openStates[index] ? "Les mindre" : "Les mer"}
                     </button>
                   </CollapsibleTrigger>
