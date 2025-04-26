@@ -24,7 +24,11 @@ export default async function ServicePage({ params }: PageProps) {
 
   return (
     <Container padding="default">
-      <PageHeader title="Tjenester" linkPath="/services" />
+      <PageHeader
+        title="Tjenester"
+        linkPath="/services"
+        linkClassName="text-primary"
+      />
       <div className="grid grid-cols-12">
         <h2 className="col-start-1 col-span-full md:col-span-5 uppercase text-lg pb-8 md:pb-0">
           {service.title}

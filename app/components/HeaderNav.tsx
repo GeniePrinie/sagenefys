@@ -1,9 +1,9 @@
 "use client";
 
-import Link from "next/link";
 import LogoSquare from "./LogoSquare";
 import Container from "./ui/Container";
 import { usePathname } from "next/navigation";
+import CustomLink from "./ui/Link";
 
 export default function HeaderNav() {
   const pathname = usePathname();
@@ -17,61 +17,36 @@ export default function HeaderNav() {
         }`}
       >
         <div className="flex items-center gap-11">
-          <Link href="/">
+          <CustomLink href="/">
             <LogoSquare />
-          </Link>
-          <Link href="/" className="text-xl">
+          </CustomLink>
+          <CustomLink href="/" className="text-xl">
             Sagene Fysioterapi
-          </Link>
+          </CustomLink>
         </div>
         <div className="flex justify-between items-center gap-8 text-base">
           <div>
-            <Link
+            <CustomLink
               href="/physioterapists"
-              className={`hover:text-primary hover:underline underline-offset-2 ${
-                pathname === "/physioterapists"
-                  ? "text-primary font-medium"
-                  : "font-normal"
-              }`}
+              isActive={pathname === "/physioterapists"}
             >
               Fysioterapeuter
-            </Link>
+            </CustomLink>
           </div>
           <div>
-            <Link
-              href="/about"
-              className={`text-black hover:text-primary hover:underline underline-offset-2 ${
-                pathname === "/about"
-                  ? "text-primary font-medium"
-                  : "font-normal"
-              }`}
-            >
+            <CustomLink href="/about" isActive={pathname === "/about"}>
               Om oss
-            </Link>
+            </CustomLink>
           </div>
           <div>
-            <Link
-              href="/contact"
-              className={`text-black hover:text-primary hover:underline underline-offset-2 ${
-                pathname === "/contact"
-                  ? "text-primary font-medium"
-                  : "font-normal"
-              }`}
-            >
+            <CustomLink href="/contact" isActive={pathname === "/contact"}>
               Kontakt
-            </Link>
+            </CustomLink>
           </div>
           <div>
-            <Link
-              href="/services"
-              className={`text-black hover:text-primary hover:underline underline-offset-2 ${
-                pathname === "/services"
-                  ? "text-primary font-medium"
-                  : "font-normal"
-              }`}
-            >
+            <CustomLink href="/services" isActive={pathname === "/services"}>
               Tjenester
-            </Link>
+            </CustomLink>
           </div>
         </div>
       </div>
