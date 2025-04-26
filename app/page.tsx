@@ -13,8 +13,8 @@ export default function Home() {
           height={1000}
           className="w-full h-auto"
         />
-        <div className="absolute bottom-24 left-8 md:left-24 z-10">
-          <h2 className="text-5xl font-semibold text-on-primary mb-6">
+        <div className="absolute bottom-16 left-8 md:left-12 md:bottom-12 lg:left-24 lg:bottom-24 z-10 md:block hidden">
+          <h2 className="text-5xl font-semibold text-on-primary mb-6 lg:mb-12">
             Et team med erfarne
             <br />
             terapeuter
@@ -27,6 +27,20 @@ export default function Home() {
           </Link>
         </div>
       </div>
+      {/* Mobile version */}
+      <Container className="md:hidden flex justify-around items-start gap-2">
+        <h2 className="text-2xl sm:text-3xl font-semibold text-black lg:mb-6">
+          Et team med erfarne
+          <br />
+          terapeuter
+        </h2>
+        <Link
+          href="/contact"
+          className="bg-muted-fg text-white rounded-full px-4 py-2"
+        >
+          <span className="hidden sm:inline">Ta </span>Kontakt
+        </Link>
+      </Container>
       <Container className="py-24">
         <div className="grid grid-cols-12">
           <h1 className="col-start-1 col-span-full md:col-span-5 uppercase text-lg">

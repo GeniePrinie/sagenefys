@@ -5,8 +5,8 @@ export const styledContainer = tv({
   base: "w-full mx-auto max-w-[1440px]",
   variants: {
     padding: {
-      default: "px-2 pt-10 md:px-8 lg:px-12",
-      noTopPadding: "px-2 pt-0 md:px-8 lg:px-12",
+      default: "px-4 pt-10 md:px-8 lg:px-12",
+      noTopPadding: "px-4 pt-0 md:px-8 lg:px-12",
       none: "",
     },
   },
