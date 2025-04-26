@@ -23,7 +23,7 @@ export default async function ServicePage({ params }: PageProps) {
   }
 
   return (
-    <Container padding="default">
+    <Container>
       <PageHeader
         title="Tjenester"
         linkPath="/services"

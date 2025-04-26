@@ -27,7 +27,7 @@ export default function Home() {
           </Link>
         </div>
       </div>
-      <Container padding="default" className="py-24">
+      <Container className="py-24">
         <div className="grid grid-cols-12">
           <h1 className="col-start-1 col-span-full md:col-span-5 uppercase text-lg">
             Hos sagene fysioterapi

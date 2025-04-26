@@ -10,9 +10,9 @@ export default function HeaderNav() {
   const isHomePage = pathname === "/";
 
   return (
-    <Container padding="default">
+    <Container padding="noTopPadding">
       <div
-        className={`h-24 flex justify-between items-center pt-[85px] pb-24 ${
+        className={`h-36 flex justify-between items-center ${
           !isHomePage ? "border-b border-primary" : ""
         }`}
       >

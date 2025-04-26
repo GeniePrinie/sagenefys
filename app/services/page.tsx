@@ -6,7 +6,7 @@ import services from "../data/services.json";
 
 export default function ServicesPage() {
   return (
-    <Container padding="default">
+    <Container>
       <PageHeader title="Tjenester" />
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-24 col-span-full mt-2">
