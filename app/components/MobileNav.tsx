@@ -34,6 +34,7 @@ export default function MobileNav() {
         anchor="right"
         open={open}
         onClose={() => setOpen(false)}
+        transitionDuration={400}
         PaperProps={{
           sx: {
             width: 288,
