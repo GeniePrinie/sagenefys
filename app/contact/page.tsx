@@ -1,16 +1,14 @@
 import Container from "../components/ui/Container";
-import PageHeader from "../components/ui/PageHeader";
 import CustomLink from "../components/ui/Link";
+import PageHeader from "../components/ui/PageHeader";
+import { PageHeading } from "../components/ui/PageHeading";
 
 export default function ContactPage() {
   return (
     <Container padding="default">
       <PageHeader title="Kontakt" />
       <div className="grid grid-cols-12">
-        <h2 className="col-start-1 col-span-full md:col-span-5 uppercase text-lg pb-8 md:pb-0">
-          Her finner du oss
-        </h2>
-
+        <PageHeading title="Her finner du oss" paddingBottom="sm" />
         <p className="col-start-1 col-span-full md:col-start-6 md:col-span-6 pb-8">
           Har du spørsmål vedrørende våre tjenester eller ønsker å bestille en
           time? Nøl ikke med å kontakte oss på telefonnummer 22 23 26 90 eller
@@ -40,7 +38,6 @@ export default function ContactPage() {
             Stavangergata 40, 0467 Oslo
           </CustomLink>
         </div>
-
         {/* Google Map */}
         <div className="col-start-1 col-span-full md:col-start-6 md:col-span-6 h-96 mb-60">
           <iframe

@@ -1,6 +1,7 @@
 import Container from "./components/ui/Container";
 import Image from "next/image";
 import Link from "next/link";
+import { PageHeading } from "./components/ui/PageHeading";
 
 export default function Home() {
   return (
@@ -43,10 +44,7 @@ export default function Home() {
       </Container>
       <Container className="py-24">
         <div className="grid grid-cols-12">
-          <h1 className="col-start-1 col-span-full md:col-span-5 uppercase text-lg pb-4 md:pb-0">
-            Hos sagene fysioterapi
-          </h1>
-
+          <PageHeading title="Hos sagene fysioterapi" paddingBottom="sm" />
           <p className="col-start-1 col-span-full md:col-start-6 md:col-span-6">
             Vi er fysioterapeuter med lang erfaring innenfor allmennfysioterapi.
             Vi gir tjenester med høy kvalitet sentralt beliggende i hjertet av

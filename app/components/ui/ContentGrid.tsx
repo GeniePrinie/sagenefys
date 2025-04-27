@@ -1,5 +1,6 @@
 import { cn } from "@/lib/utils";
 import Image from "next/image";
+import { PageHeading } from "./PageHeading";
 
 interface ContentGridProps {
   title: string;
@@ -24,9 +25,7 @@ export default function ContentGrid({
 }: ContentGridProps) {
   return (
     <div className={cn("grid grid-cols-12", className)}>
-      <h2 className="col-start-1 col-span-full md:col-span-5 uppercase text-lg pb-8 md:pb-0">
-        {title}
-      </h2>
+      <PageHeading title={title} paddingBottom="sm" />
 
       <div className="col-start-1 col-span-full md:col-span-7 pb-8 md:pb-12 relative h-[500px]">
         <Image
