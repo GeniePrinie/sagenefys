@@ -42,7 +42,7 @@ export default function ContactPage() {
         </div>
 
         {/* Google Map */}
-        <div className="col-start-1 col-span-full md:col-start-6 md:col-span-6 h-96 mb-8">
+        <div className="col-start-1 col-span-full md:col-start-6 md:col-span-6 h-96 mb-60">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.2781301959382!2d10.755366!3d59.9397795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416e11d33ecfdf%3A0x6bc3511cbb5e0f17!2sStavangergata%2040%2C%200467%20Oslo!5e0!3m2!1sen!2sno!4v1716465128991!5m2!1sen!2sno"
             width="100%"

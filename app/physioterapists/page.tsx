@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { useState } from "react";
 import {
   Collapsible,
   CollapsibleContent,
@@ -9,7 +10,6 @@ import {
 import Container from "../components/ui/Container";
 import PageHeader from "../components/ui/PageHeader";
 import people from "../data/people.json";
-import { useState } from "react";
 
 export default function PhysiotherapistsPage() {
   const [openStates, setOpenStates] = useState<boolean[]>(
@@ -28,7 +28,7 @@ export default function PhysiotherapistsPage() {
     <Container padding="default">
       <PageHeader title="Fysioterapeuter" />
 
-      <div className="grid grid-cols-1 col-span-full">
+      <div className="grid grid-cols-1 col-span-full mb-60">
         {people.map((person, index) => (
           <div key={person.id}>
             <div className="flex flex-col md:flex-row gap-8 py-8">
