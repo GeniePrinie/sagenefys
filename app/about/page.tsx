@@ -4,7 +4,7 @@ import ContentGrid from "../components/ui/ContentGrid";
 
 export default function AboutPage() {
   return (
-    <Container padding="default">
+    <Container padding="noTopPadding">
       <PageHeader title="Om oss" />
       <ContentGrid
         title="Et team med erfarne terapeuter"

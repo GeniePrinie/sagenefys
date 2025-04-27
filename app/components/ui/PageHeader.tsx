@@ -12,7 +12,7 @@ export default function PageHeader({
   linkClassName,
 }: PageHeaderProps) {
   return (
-    <h1 className="text-lg font-light pb-8">
+    <h1 className="text-lg font-light pt-8 pb-12">
       {linkPath ? (
         <CustomLink href={linkPath} className={linkClassName || ""}>
           {title}

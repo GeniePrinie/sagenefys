@@ -5,7 +5,7 @@ import { PageHeading } from "../components/ui/PageHeading";
 
 export default function ContactPage() {
   return (
-    <Container padding="default">
+    <Container padding="noTopPadding">
       <PageHeader title="Kontakt" />
       <div className="grid grid-cols-12">
         <PageHeading title="Her finner du oss" paddingBottom="sm" />
@@ -26,6 +26,17 @@ export default function ContactPage() {
         <div className="col-start-1 col-span-full md:col-start-6 md:col-span-5 pb-8">
           <p className="font-semibold">Telefon</p>
           <p className="text-blue-600">+ 47 22 23 26 90</p>
+        </div>
+        <div className="col-start-1 col-span-full md:col-start-6 md:col-span-5 pb-8">
+          <p className="font-semibold">Sociale medier</p>
+          <CustomLink
+            href="https://www.facebook.com/drobakgatafysio"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600"
+          >
+            Facebook
+          </CustomLink>
         </div>
         <div className="col-start-1 col-span-full md:col-start-6 md:col-span-5 pb-8">
           <p className="font-semibold">Adresse</p>

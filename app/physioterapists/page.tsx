@@ -25,7 +25,7 @@ export default function PhysiotherapistsPage() {
   };
 
   return (
-    <Container padding="default">
+    <Container padding="noTopPadding">
       <PageHeader title="Fysioterapeuter" />
 
       <div className="grid grid-cols-1 col-span-full mb-60">
