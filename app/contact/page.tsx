@@ -11,8 +11,18 @@ export default function ContactPage() {
         <PageHeading title="Her finner du oss" paddingBottom="sm" />
         <p className="col-start-1 col-span-full md:col-start-6 md:col-span-6 pb-8">
           Har du spørsmål vedrørende våre tjenester eller ønsker å bestille en
-          time? Nøl ikke med å kontakte oss på telefonnummer 22 23 26 90 eller
-          send oss en e-post.
+          time? Nøl ikke med å kontakte oss på{" "}
+          <CustomLink href="tel:+4722232690" className="text-blue-600">
+            telefonnummer
+          </CustomLink>{" "}
+          eller send oss en{" "}
+          <CustomLink
+            href="mailto:info@sagene-fysioterapi.no"
+            className="text-blue-600"
+          >
+            e-post
+          </CustomLink>
+          .
         </p>
         <div className="col-start-1 col-span-full md:col-start-6 md:col-span-5 pb-8">
           <p className="font-semibold">E-post</p>
@@ -25,7 +35,9 @@ export default function ContactPage() {
         </div>
         <div className="col-start-1 col-span-full md:col-start-6 md:col-span-5 pb-8">
           <p className="font-semibold">Telefon</p>
-          <p className="text-blue-600">+ 47 22 23 26 90</p>
+          <CustomLink href="tel:+4722232690" className="text-blue-600">
+            + 47 22 23 26 90
+          </CustomLink>
         </div>
         <div className="col-start-1 col-span-full md:col-start-6 md:col-span-5 pb-8">
           <p className="font-semibold">Sociale medier</p>
