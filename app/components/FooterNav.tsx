@@ -14,7 +14,9 @@ export default function FooterNav() {
       <div className="flex flex-col sm:flex-row justify-between items-center gap-y-6 text-lg border-t border-blue-600 pt-8">
         {/* Left */}
         <div className="text-center md:text-left w-full md:w-auto">
-          <p>©Sagene Fysioterapi & Trening</p>
+          <CustomLink href="/" noHover>
+            ©Sagene Fysioterapi & Trening
+          </CustomLink>
         </div>
         {/* Right: Icons */}
         <div className="flex gap-6 w-full md:w-auto justify-center sm:justify-end items-center">
