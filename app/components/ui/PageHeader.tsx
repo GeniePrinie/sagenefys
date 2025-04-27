@@ -11,17 +11,15 @@ export default function PageHeader({
   linkPath,
   linkClassName,
 }: PageHeaderProps) {
-  const content = (
-    <h1 className="col-start-1 col-span-full md:col-span-5 text-lg font-light pb-8">
-      {title}
+  return (
+    <h1 className="text-lg font-light pb-8">
+      {linkPath ? (
+        <CustomLink href={linkPath} className={linkClassName || ""}>
+          {title}
+        </CustomLink>
+      ) : (
+        title
+      )}
     </h1>
-  );
-
-  return linkPath ? (
-    <CustomLink href={linkPath} className={`block ${linkClassName || ""}`}>
-      {content}
-    </CustomLink>
-  ) : (
-    content
   );
 }
