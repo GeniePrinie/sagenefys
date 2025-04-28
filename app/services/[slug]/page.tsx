@@ -10,15 +10,12 @@ export function generateStaticParams() {
   }));
 }
 
-interface PageProps {
+type Props = {
   params: { slug: string };
-}
+  searchParams: { [key: string]: string | string[] | undefined };
+};
 
-export async function generateMetadata({
-  params,
-}: {
-  params: { slug: string };
-}) {
+export async function generateMetadata({ params }: Props) {
   const service = services.find((s) => s.slug === params.slug);
   if (!service) return {};
   return {
@@ -27,7 +24,7 @@ export async function generateMetadata({
   };
 }
 
-export default async function ServicePage({ params }: PageProps) {
+export default async function ServicePage({ params }: Props) {
   const service = services.find((s) => s.slug === params.slug);
 
   if (!service) {
