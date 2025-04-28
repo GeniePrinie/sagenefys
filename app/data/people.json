@@ -4,9 +4,12 @@
     "firstName": "Anders",
     "lastName": "Blomberg Pedersen",
     "position": "Manuellterapeut",
-    "education": "Bachelor i fysioterapi ved OsloMet, 2011\n\nMaster i musculoskeletal Physiotherapy ved University of Brighton, England, 2019.",
-    "info": "Holder treningsgrupper ved Sagene bad 2 ganger i uken. Tirsdager og torsdager.\nTreningsgrupper ved Sagene fysioterapi & trening tirsdager og torsdager, frisklivstrening og opptrening.",
+    "education": [
+      "Bachelor i fysioterapi ved OsloMet, 2011",
+      "Master i musculoskeletal Physiotherapy ved University of Brighton, England, 2019."
+    ],
     "specialties": "Manuellterapi og idrettsfysioterapi. Opptrening etter skader. Akutt og langvarig ryggplager. Skulder og kneplager.",
+    "info": "Holder treningsgrupper ved Sagene bad 2 ganger i uken. Tirsdager og torsdager. Treningsgrupper ved Sagene fysioterapi & trening tirsdager og torsdager, frisklivstrening og opptrening.",
     "email": "blombergfysio@gmail.com",
     "phone": "+47 22 23 26 90",
     "img": "/images/people/person-1.jpg"
@@ -15,10 +18,13 @@
     "id": 2,
     "firstName": "Are",
     "lastName": "Fjerdingstad",
-    "position": "Fysioterapeut",
-    "education": "Bachelor i fysioterapi ved OsloMet, 2011\n\nMaster i musculoskeletal Physiotherapy ved University of Brighton, England, 2019.",
-    "info": "Holder treningsgrupper ved Sagene bad 2 ganger i uken. Tirsdager og torsdager.\nTreningsgrupper ved Sagene fysioterapi & trening tirsdager og torsdager, frisklivstrening og opptrening.",
-    "specialties": "Manuellterapi og idrettsfysioterapi. Opptrening etter skader. Akutt og langvarig ryggplager. Skulder og kneplager.",
+    "position": "Fysioterapeut, Idrettsmassør",
+    "education": [
+      "Fysioterapeut og idrettsmassør utdannet fra Utrecht, 1998",
+      "Idrettsfysioterapi trinn 1"
+    ],
+    "specialties": "Ortopediske lidelser, muskel-skjelettplager Idrettsfysioterapi",
+    "info": "Har bassengtrening på Sagene bad en gang i uken.",
     "email": "afjerd@online.no",
     "phone": "+47 22 23 26 90",
     "img": "/images/people/person-1.jpg"
@@ -28,9 +34,12 @@
     "firstName": "Simen",
     "lastName": "Boretti",
     "position": "Manuellterapeut",
-    "education": "Bachelor i fysioterapi ved OsloMet, 2011\n\nMaster i musculoskeletal Physiotherapy ved University of Brighton, England, 2019.",
-    "info": "Holder treningsgrupper ved Sagene bad 2 ganger i uken. Tirsdager og torsdager.\nTreningsgrupper ved Sagene fysioterapi & trening tirsdager og torsdager, frisklivstrening og opptrening.",
+    "education": [
+      "Bachelor i fysioterapi ved OsloMet, 2011",
+      "Master i musculoskeletal Physiotherapy ved University of Brighton, England, 2019."
+    ],
     "specialties": "Manuellterapi og idrettsfysioterapi. Opptrening etter skader. Akutt og langvarig ryggplager. Skulder og kneplager.",
+    "info": "Holder treningsgrupper ved Sagene bad 2 ganger i uken. Tirsdager og torsdager. Treningsgrupper ved Sagene fysioterapi & trening tirsdager og torsdager, frisklivstrening og opptrening.",
     "email": "simenboretti@hotmail.com",
     "phone": "+47 22 23 26 90",
     "img": "/images/people/person-1.jpg"
@@ -40,9 +49,12 @@
     "firstName": "Vibeke",
     "lastName": "Amstel",
     "position": "Fysioterapeut",
-    "education": "Bachelor i fysioterapi ved OsloMet, 2014\n\nVidereutdanning i ortopedisk manuellterapi ved Høgskolen i Bergen, 2017.",
-    "info": "Leder gruppetimer for rehabilitering og styrketrening mandager og onsdager.\nSpesialisert på kvinnehelse og bekkenrelaterte plager.",
-    "specialties": "Kvinnehelse, bekkenplager, nakkesmerter og hodepine. Erfaring med rehabilitering etter operasjoner og idrettsskader.",
+    "education": [
+      "Uteksaminert fra fysioterapi utdanning ved Høyskolen i Oslo 1998",
+      "Videreutdanning i barnefysioterapi fra Høyskolen i Oslo 2010."
+    ],
+    "specialties": "Faglige interesser; bekken relaterte plager, idrettsmedisin, ortopedi hofte og kne. Barnefysioterapi.",
+    "info": "",
     "email": "vibekeamstel@hotmail.com",
     "phone": "+47 22 23 26 90",
     "img": "/images/people/person-1.jpg"
@@ -52,9 +64,12 @@
     "firstName": "Kamilla",
     "lastName": "Furan",
     "position": "Fysioterapeut",
-    "education": "Bachelor i fysioterapi ved Høgskolen i Oslo, 2015\n\nMaster i idrettsfysioterapi ved Norges idrettshøgskole, 2018.",
-    "info": "Erfaren med behandling av idrettsutøvere på alle nivåer.\nHolder ukentlige treningsgrupper med fokus på skadeforebygging og prestasjonsforbedring.",
+    "education": [
+      "Bachelor i fysioterapi ved Høgskolen i Oslo, 2015",
+      "Master i idrettsfysioterapi ved Norges idrettshøgskole, 2018."
+    ],
     "specialties": "Idrettsfysioterapi, akutte skader, rehabilitering av kne- og ankelskader. Spesialisert på løperelaterte plager.",
+    "info": "Erfaren med behandling av idrettsutøvere på alle nivåer. Holder ukentlige treningsgrupper med fokus på skadeforebygging og prestasjonsforbedring.",
     "email": "Kamilla_furan@hotmail.com",
     "phone": "+47 22 23 26 90",
     "img": "/images/people/person-1.jpg"

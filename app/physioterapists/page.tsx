@@ -43,33 +43,36 @@ export default function PhysiotherapistsPage() {
               </div>
 
               <div className="flex-1 md:max-w-xl lg:max-w-2xl">
-                <p className="text-primary text-lg mb-1">{person.position}</p>
-                <h2 className="text-4xl leading-tight font-normal tracking-tighter mb-8">
+                <p className="text-primary text-lg">{person.position}</p>
+                <h2 className="text-4xl leading-tight font-normal tracking-tighter mb-6">
                   {person.firstName} {person.lastName}
                 </h2>
 
+                <div className="mb-6">
+                  <h3 className="font-semibold">Utdannelse</h3>
+                  {person.education.map((edu, index) => (
+                    <p key={index} className="text-base">
+                      {edu}
+                    </p>
+                  ))}
+                </div>
+
+                <div className="mb-6">
+                  <h3 className="font-semibold">Faglig interessefelt</h3>
+                  <p className="text-base">{person.specialties}</p>
+                </div>
                 <Collapsible
                   open={openStates[index]}
                   onOpenChange={() => toggleOpen(index)}
                 >
-                  <p className="mb-4 text-base">{person.specialties}</p>
-
                   <CollapsibleContent>
-                    <div className="mb-5">
-                      <h3 className="font-medium mb-2">Utdannelse</h3>
-                      <p className="text-base whitespace-pre-line">
-                        {person.education}
-                      </p>
+                    <div className="mb-6">
+                      <h3 className="font-semibold">Mer info</h3>
+                      <p className="text-base">{person.info}</p>
                     </div>
 
-                    <div className="mb-2">
-                      <p className="text-base whitespace-pre-line">
-                        {person.info}
-                      </p>
-                    </div>
-
-                    <p className="mb-2">
-                      <span className="font-medium">Email: </span>
+                    <p className="mb-1">
+                      <span className="font-semibold">Email: </span>
                       <a
                         href={`mailto:${person.email}`}
                         className="text-primary hover:underline"
@@ -78,7 +81,7 @@ export default function PhysiotherapistsPage() {
                       </a>
                     </p>
                     <p className="mb-4">
-                      <span className="font-medium">Telefon: </span>
+                      <span className="font-semibold">Telefon: </span>
                       <a
                         href={`tel:${person.phone}`}
                         className="text-primary hover:underline"
