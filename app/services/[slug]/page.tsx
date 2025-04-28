@@ -11,7 +11,7 @@ export function generateStaticParams() {
 }
 
 interface PageProps {
-  params: Promise<{ slug: string }>;
+  params: { slug: string };
 }
 
 export async function generateMetadata({
@@ -28,8 +28,7 @@ export async function generateMetadata({
 }
 
 export default async function ServicePage({ params }: PageProps) {
-  const { slug } = await params;
-  const service = services.find((s) => s.slug === slug);
+  const service = services.find((s) => s.slug === params.slug);
 
   if (!service) {
     notFound();
