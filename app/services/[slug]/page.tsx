@@ -11,12 +11,15 @@ export function generateStaticParams() {
   }));
 }
 
-type Props = {
-  params: { slug: string };
+type PageProps = {
+  params: Promise<{ slug: string }>;
 };
 
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const service = services.find((s) => s.slug === params.slug);
+export async function generateMetadata({
+  params,
+}: PageProps): Promise<Metadata> {
+  const { slug } = await params;
+  const service = services.find((s) => s.slug === slug);
   if (!service) return {};
   return {
     title: `${service.title} | Sagene Fysioterapi`,
@@ -24,8 +27,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-export default async function ServicePage({ params }: Props) {
-  const service = services.find((s) => s.slug === params.slug);
+export default async function ServicePage({ params }: PageProps) {
+  const { slug } = await params;
+  const service = services.find((s) => s.slug === slug);
 
   if (!service) {
     notFound();
