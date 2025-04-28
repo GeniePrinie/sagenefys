@@ -24,14 +24,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html className={`${poppins.variable} ${poppins.className} antialiased`}>
+    <html
+      lang="nb"
+      className={`${poppins.variable} ${poppins.className} antialiased`}
+    >
+      <head>
+        <meta name="apple-mobile-web-app-title" content="Sagene Fysioterapi" />
+      </head>
       <body className="grid grid-cols-12">
-        <head>
-          <meta
-            name="apple-mobile-web-app-title"
-            content="Sagene Fysioterapi"
-          />
-        </head>
         <section className="min-h-screen flex flex-col col-start-1 col-span-full">
           <HeaderNav />
           <main className="flex-grow">{children}</main>
