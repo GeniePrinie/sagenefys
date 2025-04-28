@@ -3,6 +3,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { PageHeading } from "./components/ui/PageHeading";
 
+export const metadata = {
+  title: "Sagene Fysioterapi og Trening",
+  description:
+    "Fysioterapeuter med lang erfaring i hjertet av Sagene. Bestill time eller les mer om våre tjenester.",
+};
+
 export default function Home() {
   return (
     <>

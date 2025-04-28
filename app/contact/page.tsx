@@ -3,6 +3,12 @@ import CustomLink from "../components/ui/Link";
 import PageHeader from "../components/ui/PageHeader";
 import { PageHeading } from "../components/ui/PageHeading";
 
+export const metadata = {
+  title: "Kontakt | Sagene Fysioterapi",
+  description:
+    "Kontakt Sagene Fysioterapi for spørsmål, timebestilling eller veibeskrivelse.",
+};
+
 export default function ContactPage() {
   return (
     <Container padding="noTopPadding">

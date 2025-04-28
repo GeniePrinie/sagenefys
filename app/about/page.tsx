@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "Om oss | Sagene Fysioterapi",
+  description:
+    "Bli kjent med vårt erfarne team av fysioterapeuter og vår filosofi.",
+};
+
 import Container from "../components/ui/Container";
 import PageHeader from "../components/ui/PageHeader";
 import ContentGrid from "../components/ui/ContentGrid";

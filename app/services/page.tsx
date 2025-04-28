@@ -4,6 +4,12 @@ import Container from "../components/ui/Container";
 import PageHeader from "../components/ui/PageHeader";
 import services from "../data/services.json";
 
+export const metadata = {
+  title: "Tjenester | Sagene Fysioterapi",
+  description:
+    "Se vårt brede utvalg av fysioterapitjenester og behandlingstilbud.",
+};
+
 export default function ServicesPage() {
   return (
     <Container padding="noTopPadding">

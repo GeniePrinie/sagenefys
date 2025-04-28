@@ -14,6 +14,19 @@ interface PageProps {
   params: Promise<{ slug: string }>;
 }
 
+export async function generateMetadata({
+  params,
+}: {
+  params: { slug: string };
+}) {
+  const service = services.find((s) => s.slug === params.slug);
+  if (!service) return {};
+  return {
+    title: `${service.title} | Sagene Fysioterapi`,
+    description: service.description,
+  };
+}
+
 export default async function ServicePage({ params }: PageProps) {
   const { slug } = await params;
   const service = services.find((s) => s.slug === slug);
