@@ -19,10 +19,15 @@ export default function HeaderNav() {
         }`}
       >
         <div className="flex items-center gap-11">
-          <CustomLink href="/">
+          <CustomLink href="/" aria-label="Gå til forsiden">
             <LogoSquare />
           </CustomLink>
-          <CustomLink href="/" className="hidden lg:block text-xl" noHover>
+          <CustomLink
+            href="/"
+            aria-label="Gå til forsiden"
+            className="hidden lg:block text-xl"
+            noHover
+          >
             Sagene Fysioterapi
           </CustomLink>
         </div>
