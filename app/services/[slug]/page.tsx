@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import Container from "../../components/ui/Container";
 import services from "../../data/services.json";
 import ContentGrid from "../../components/ui/ContentGrid";
+import { Metadata } from "next";
 
 export function generateStaticParams() {
   return services.map((service) => ({
@@ -12,10 +13,9 @@ export function generateStaticParams() {
 
 type Props = {
   params: { slug: string };
-  searchParams: { [key: string]: string | string[] | undefined };
 };
 
-export async function generateMetadata({ params }: Props) {
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const service = services.find((s) => s.slug === params.slug);
   if (!service) return {};
   return {
