@@ -17,7 +17,10 @@ export default function ServicesPage() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-24 col-span-full mt-2 pt-7">
         {services.map((service) => (
-          <div key={service.id} className="flex flex-col h-full">
+          <div
+            key={service.id}
+            className="flex flex-col h-full transition-all duration-300 hover:-translate-y-1 hover:scale-[1.01]"
+          >
             <Link
               href={`/services/${service.slug}`}
               className="group flex-grow"
