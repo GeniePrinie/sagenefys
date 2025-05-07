@@ -35,7 +35,7 @@ export default function Home() {
         </div>
       </div>
       {/* Mobile version */}
-      <Container className="md:hidden flex justify-around items-start gap-2">
+      <Container className="md:hidden flex flex-col justify-around items-start gap-5">
         <h2 className="text-2xl sm:text-3xl font-semibold text-black lg:mb-6">
           Et team med erfarne
           <br />

@@ -24,7 +24,7 @@ export default function ContentGrid({
   className,
 }: ContentGridProps) {
   return (
-    <div className={cn("grid grid-cols-12", className)}>
+    <div className={cn("grid grid-cols-12 pt-7", className)}>
       <PageHeading title={title} paddingBottom="sm" />
 
       <div className="col-start-1 col-span-full md:col-span-7 pb-8 md:pb-12 relative h-[500px]">

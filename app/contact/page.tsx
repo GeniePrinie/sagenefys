@@ -13,7 +13,7 @@ export default function ContactPage() {
   return (
     <Container padding="noTopPadding">
       <PageHeader title="Kontakt" />
-      <div className="grid grid-cols-12">
+      <div className="grid grid-cols-12 pt-7">
         <PageHeading title="Her finner du oss" paddingBottom="sm" />
         <p className="col-start-1 col-span-full md:col-start-6 md:col-span-6 pb-8">
           Har du spørsmål vedrørende våre tjenester eller ønsker å bestille en
