@@ -28,7 +28,7 @@ export default function Home() {
           </h2>
           <Link
             href="/contact"
-            className="inline-flex items-center px-6 py-3 bg-muted-fg text-on-primary rounded-full hover:bg-opacity-90 transition-all"
+            className="inline-flex items-center px-6 py-3 text-on-primary rounded-full bg-muted-fg hover:!bg-primary transition-all"
           >
             Ta Kontakt
           </Link>
@@ -43,9 +43,9 @@ export default function Home() {
         </h2>
         <Link
           href="/contact"
-          className="bg-muted-fg text-white rounded-full px-4 py-2"
+          className="border border-muted-fg bg-primary-muted rounded-full px-4 py-2 hover:!bg-muted-fg hover:!text-on-primary transition-all"
         >
-          <span className="hidden sm:inline">Ta </span>Kontakt
+          Ta Kontakt
         </Link>
       </Container>
       <Container className="py-24">

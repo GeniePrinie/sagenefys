@@ -31,7 +31,7 @@ export default function RootLayout({
       <head>
         <meta name="apple-mobile-web-app-title" content="Sagene Fysioterapi" />
       </head>
-      <body className="grid grid-cols-12">
+      <body className="grid grid-cols-12 bg-primary-muted">
         <section className="min-h-screen flex flex-col col-start-1 col-span-full">
           <HeaderNav />
           <main className="flex-grow">{children}</main>
