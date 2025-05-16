@@ -9,8 +9,8 @@ const menuItems = [
   { text: "Hjem", path: "/" },
   { text: "Fysioterapeuter", path: "/physioterapists" },
   { text: "Om oss", path: "/about" },
-  { text: "Kontakt", path: "/contact" },
   { text: "Tjenester", path: "/services" },
+  { text: "Kontakt", path: "/contact" },
 ];
 
 export default function MobileNav() {

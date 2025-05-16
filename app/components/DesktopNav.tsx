@@ -22,13 +22,13 @@ export default function DesktopNav() {
         </CustomLink>
       </div>
       <div>
-        <CustomLink href="/contact" isActive={pathname === "/contact"}>
-          Kontakt
+        <CustomLink href="/services" isActive={pathname === "/services"}>
+          Tjenester
         </CustomLink>
       </div>
       <div>
-        <CustomLink href="/services" isActive={pathname === "/services"}>
-          Tjenester
+        <CustomLink href="/contact" isActive={pathname === "/contact"}>
+          Kontakt
         </CustomLink>
       </div>
     </div>
