@@ -15,7 +15,7 @@ export default function AboutPage() {
       <ContentGrid
         title="Et team med erfarne terapeuter"
         image={{
-          src: "/images/about.jpg",
+          src: "/images/grass.jpg",
           alt: "Hero image",
           width: 1000,
           height: 1000,
