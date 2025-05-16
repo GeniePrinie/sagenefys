@@ -12,7 +12,7 @@
     "title": "Frisklivstrening",
     "slug": "frisklivstrening",
     "description": "Frisklivstrening tilbys ved klinikken for deg som trenger motivasjon og veiledning for å komme i gang med fysisk aktivitet.  Fysisk aktivitet gir deg overskudd, bedre humør, og forebygger en rekke sykdommer. Ønsker du å komme i gang med fysisk aktivitet, men er litt usikker på hvordan?",
-    "img": "/images/services/service-2.jpg",
+    "img": "/images/services/service2.jpg",
     "link": ""
   },
   {
@@ -51,8 +51,8 @@
     "id": 7,
     "title": "Terapibasseng trening ved Sagene bad",
     "slug": "Terapibasseng-trening-ved-sagene-bad",
-    "description": "Skånsom trening med fysioterapeut i oppvarmet basseng ved Sagene bad",
-    "img": "/images/services/service-7.jpg",
+    "description": "Vi har gleden av å tilby våre brukere i bydelen trening ved Sagene bad. Vi har 12 grupper per uke på Sagene Bad med fysioterapi trening i basseng, så kallet Terapibad. Hver gruppe trener i 10 uker. Det er fysioterapeuter med driftsavtale med kommunen som driver gruppene, så prisen følger prislisten på Helse-Norge. Hver gruppe settes sammen ut fra funksjonsnivå og treningsintensitet med fokus på kondisjon, styrke og bevegelighet. Du kommer å innkalles til en undersøkelse hos en av våre fysioterapeuter innen du får tilbud om plass i en gruppe. Tilbudet passer særlig for brukere med: Gravid med bekkenløsning/ryggsmerter, Overvektig, Rygglidelse, Nakke/skulderlidelser, Fibromyalgi, Revmatiske sykdommer, Slagpasienter.",
+    "img": "/images/services/service7.jpg",
     "link": "https://sagenefolkebad.no/"
   }
 ]

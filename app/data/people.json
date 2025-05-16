@@ -12,7 +12,7 @@
     "info": "Holder treningsgrupper ved Sagene bad 2 ganger i uken. Tirsdager og torsdager. Treningsgrupper ved Sagene fysioterapi & trening tirsdager og torsdager, frisklivstrening og opptrening.",
     "email": "blombergfysio@gmail.com",
     "phone": "+47 22 23 26 90",
-    "img": "/images/people/person-1.jpg"
+    "img": "/images/people/anders.jpg"
   },
   {
     "id": 2,
@@ -27,7 +27,7 @@
     "info": "Har bassengtrening på Sagene bad en gang i uken.",
     "email": "afjerd@online.no",
     "phone": "+47 22 23 26 90",
-    "img": "/images/people/person-1.jpg"
+    "img": "/images/people/are.jpg"
   },
   {
     "id": 3,
@@ -35,14 +35,14 @@
     "lastName": "Boretti",
     "position": "Manuellterapeut",
     "education": [
-      "Bachelor i fysioterapi ved OsloMet, 2011",
-      "Master i musculoskeletal Physiotherapy ved University of Brighton, England, 2019."
+      "Grunnutdanning i fysioterapi Høgskolen i Oslo 2000",
+      "Master i manuellterapi Universitetet i Bergen 2008"
     ],
-    "specialties": "Manuellterapi og idrettsfysioterapi. Opptrening etter skader. Akutt og langvarig ryggplager. Skulder og kneplager.",
-    "info": "Holder treningsgrupper ved Sagene bad 2 ganger i uken. Tirsdager og torsdager. Treningsgrupper ved Sagene fysioterapi & trening tirsdager og torsdager, frisklivstrening og opptrening.",
+    "specialties": "Manuellterapi og idrettsfysioterapi",
+    "info": "Erfaring som idrettsfysioterapeut på landslag i alpint, fotball og skiskyting.",
     "email": "simenboretti@hotmail.com",
     "phone": "+47 22 23 26 90",
-    "img": "/images/people/person-1.jpg"
+    "img": "/images/people/simen.jpg"
   },
   {
     "id": 4,
@@ -57,7 +57,7 @@
     "info": "",
     "email": "vibekeamstel@hotmail.com",
     "phone": "+47 22 23 26 90",
-    "img": "/images/people/person-1.jpg"
+    "img": "/images/people/vibeke.jpg"
   },
   {
     "id": 5,

@@ -14,8 +14,8 @@ export default function Home() {
     <>
       <div className="relative">
         <Image
-          src="/images/hero.jpg"
-          alt="Hero image"
+          src="/images/hero2.jpg"
+          alt="Sagene team"
           width={1000}
           height={1000}
           className="w-full h-auto"
@@ -48,7 +48,7 @@ export default function Home() {
           Ta Kontakt
         </Link>
       </Container>
-      <Container className="py-24">
+      <Container className="pt-24">
         <div className="grid grid-cols-12">
           <PageHeading title="Hos sagene fysioterapi" paddingBottom="sm" />
           <p className="col-start-1 col-span-full md:col-start-6 md:col-span-6">

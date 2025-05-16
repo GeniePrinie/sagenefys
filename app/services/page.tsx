@@ -3,7 +3,6 @@ import Link from "next/link";
 import Container from "../components/ui/Container";
 import PageHeader from "../components/ui/PageHeader";
 import services from "../data/services.json";
-
 export const metadata = {
   title: "Tjenester | Sagene Fysioterapi",
   description:
@@ -34,7 +33,7 @@ export default function ServicesPage() {
                   className="object-cover"
                 />
               </div>
-              <h2 className="text-xl font-semibold text-black group-hover:text-custom-blue-600 transition-colors">
+              <h2 className="text-xl mt-8 font-semibold text-black group-hover:text-custom-blue-600 transition-colors">
                 {service.title}
               </h2>
               <p className="mt-2 line-clamp-2 text-black/70">
@@ -43,8 +42,8 @@ export default function ServicesPage() {
             </Link>
             <div className="mt-4">
               <Link href={`/services/${service.slug}`}>
-                <span className="inline-flex items-center px-8 py-2 bg-custom-blue-600 text-white font-medium hover:bg-custom-blue-900 transition-colors">
-                  Ser mer <span className="ml-2">→</span>
+                <span className="inline-flex items-center hover:text-primary transition-colors">
+                  Les mer <span className="ml-[3px] pt-[2px]">→</span>
                 </span>
               </Link>
             </div>

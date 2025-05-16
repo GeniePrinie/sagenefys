@@ -28,7 +28,7 @@ export default function PhysiotherapistsPage() {
     <Container padding="noTopPadding">
       <PageHeader title="Fysioterapeuter" />
 
-      <div className="grid grid-cols-1 col-span-full mb-60">
+      <div className="grid grid-cols-1 col-span-full">
         {people.map((person, index) => (
           <div key={person.id}>
             <div className="flex flex-col md:flex-row gap-8 py-8">
