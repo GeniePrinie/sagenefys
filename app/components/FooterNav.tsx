@@ -10,7 +10,7 @@ const PHONE_URL = "tel:+4722232690";
 
 export default function FooterNav() {
   return (
-    <Container padding="noTopPadding" className="pb-8">
+    <Container padding="noTopPadding" className="pb-8 mt-60">
       <div className="flex flex-col sm:flex-row justify-between items-center gap-y-6 text-lg border-t border-blue-600 pt-8">
         {/* Left */}
         <div className="text-center md:text-left w-full md:w-auto">

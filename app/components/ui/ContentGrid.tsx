@@ -38,7 +38,7 @@ export default function ContentGrid({
         />
       </div>
 
-      <p className="mt-16 mb-60 col-start-1 col-span-full md:col-start-6 md:col-span-6">
+      <p className="mt-16 col-start-1 col-span-full md:col-start-6 md:col-span-6">
         {description}
       </p>
     </div>
