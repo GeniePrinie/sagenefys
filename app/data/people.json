@@ -61,17 +61,14 @@
   },
   {
     "id": 5,
-    "firstName": "Kamilla",
-    "lastName": "Furan",
+    "firstName": "Vikar",
+    "lastName": "",
     "position": "Fysioterapeut",
-    "education": [
-      "Bachelor i fysioterapi ved Høgskolen i Oslo, 2015",
-      "Master i idrettsfysioterapi ved Norges idrettshøgskole, 2018."
-    ],
-    "specialties": "Idrettsfysioterapi, akutte skader, rehabilitering av kne- og ankelskader. Spesialisert på løperelaterte plager.",
-    "info": "Erfaren med behandling av idrettsutøvere på alle nivåer. Holder ukentlige treningsgrupper med fokus på skadeforebygging og prestasjonsforbedring.",
-    "email": "Kamilla_furan@hotmail.com",
+    "education": ["", ""],
+    "specialties": "",
+    "info": "",
+    "email": "",
     "phone": "+47 22 23 26 90",
-    "img": "/images/people/person-1.jpg"
+    "img": "/images/people/blankperson.png"
   }
 ]

@@ -22,7 +22,7 @@ export default function MobileNav() {
       {/* Mobile menu button */}
       <div className="flex md:hidden">
         <button
-          className="md:hidden relative top-0 right-0 z-50 bg-muted-fg text-white rounded-full px-4 py-2 cursor-pointer"
+          className="md:hidden relative top-0 right-0 z-50 bg-primary text-white rounded-full px-4 py-2 cursor-pointer"
           onClick={() => setOpen(true)}
           aria-label="Open menu"
         >

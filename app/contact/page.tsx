@@ -34,7 +34,7 @@ export default function ContactPage() {
           </CustomLink>{" "}
           eller send oss en{" "}
           <CustomLink
-            href="mailto:info@sagene-fysioterapi.no"
+            href="mailto:kontakt@sagenefysio.no"
             className="text-blue-600"
           >
             e-post
@@ -44,10 +44,10 @@ export default function ContactPage() {
         <div className="col-start-1 col-span-full md:col-start-6 md:col-span-5 pb-8">
           <p className="font-semibold">E-post</p>
           <CustomLink
-            href="mailto:info@sagene-fysioterapi.no"
+            href="mailto:kontakt@sagenefysio.no"
             className="text-blue-600"
           >
-            info@sagene-fysioterapi.no
+            kontakt@sagenefysio.no
           </CustomLink>
         </div>
         <div className="col-start-1 col-span-full md:col-start-6 md:col-span-5 pb-8">

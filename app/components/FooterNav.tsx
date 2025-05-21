@@ -5,7 +5,7 @@ import { FacebookIcon, LocationIcon, EmailIcon, PhoneIcon } from "./icons";
 const FACEBOOK_URL = "https://www.facebook.com/drobakgatafysio";
 const LOCATION_URL =
   "https://www.google.com/maps/place/Stavangergata+40,+0467+Oslo,+Norway";
-const EMAIL_URL = "mailto:info@sagene-fysioterapi.no";
+const EMAIL_URL = "mailto:kontakt@sagenefysio.no";
 const PHONE_URL = "tel:+4722232690";
 
 export default function FooterNav() {
