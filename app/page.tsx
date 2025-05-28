@@ -14,7 +14,7 @@ export default function Home() {
     <>
       <div className="relative">
         <Image
-          src="/images/hero2.jpg"
+          src="/images/hero.png"
           alt="Sagene team"
           width={1000}
           height={1000}
