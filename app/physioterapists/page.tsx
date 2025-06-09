@@ -2,11 +2,7 @@
 
 import Image from "next/image";
 import { useState } from "react";
-import {
-  Collapsible,
-  CollapsibleContent,
-  CollapsibleTrigger,
-} from "../components/ui/collapsible";
+import Collapse from "@mui/material/Collapse";
 import Container from "../components/ui/Container";
 import PageHeader from "../components/ui/PageHeader";
 import people from "../data/people.json";
@@ -61,42 +57,38 @@ export default function PhysiotherapistsPage() {
                   <h3 className="font-semibold">Faglig interessefelt</h3>
                   <p className="text-base">{person.specialties}</p>
                 </div>
-                <Collapsible
-                  open={openStates[index]}
-                  onOpenChange={() => toggleOpen(index)}
+
+                <Collapse in={openStates[index]} timeout={400}>
+                  <div className="mb-6 p-0 bg-transparent">
+                    <h3 className="font-semibold">Mer info</h3>
+                    <p className="text-base">{person.info}</p>
+                  </div>
+                  <p className="mb-1">
+                    <span className="font-semibold">Email: </span>
+                    <a
+                      href={`mailto:${person.email}`}
+                      className="text-primary hover:underline"
+                    >
+                      {person.email}
+                    </a>
+                  </p>
+                  <p className="mb-4">
+                    <span className="font-semibold">Telefon: </span>
+                    <a
+                      href={`tel:${person.phone}`}
+                      className="text-primary hover:underline"
+                    >
+                      {person.phone}
+                    </a>
+                  </p>
+                </Collapse>
+                <button
+                  className="text-black font-medium underline-offset-4 underline focus:outline-none mt-2 cursor-pointer hover:text-primary transition-colors"
+                  onClick={() => toggleOpen(index)}
+                  type="button"
                 >
-                  <CollapsibleContent>
-                    <div className="mb-6">
-                      <h3 className="font-semibold">Mer info</h3>
-                      <p className="text-base">{person.info}</p>
-                    </div>
-
-                    <p className="mb-1">
-                      <span className="font-semibold">Email: </span>
-                      <a
-                        href={`mailto:${person.email}`}
-                        className="text-primary hover:underline"
-                      >
-                        {person.email}
-                      </a>
-                    </p>
-                    <p className="mb-4">
-                      <span className="font-semibold">Telefon: </span>
-                      <a
-                        href={`tel:${person.phone}`}
-                        className="text-primary hover:underline"
-                      >
-                        {person.phone}
-                      </a>
-                    </p>
-                  </CollapsibleContent>
-
-                  <CollapsibleTrigger asChild>
-                    <button className="text-black font-medium underline-offset-4 underline focus:outline-none mt-2 cursor-pointer hover:text-primary transition-colors">
-                      {openStates[index] ? "Les mindre" : "Les mer"}
-                    </button>
-                  </CollapsibleTrigger>
-                </Collapsible>
+                  {openStates[index] ? "Les mindre" : "Les mer"}
+                </button>
               </div>
             </div>
 
