@@ -1,10 +1,8 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  output: "export",
-  images: {
-    unoptimized: true, // Only needed if using next/image
-  },
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  output: 'export',           // enables static export
+  basePath: '/sagenefys',     // matches your GitHub repo name
+  assetPrefix: '/sagenefys',  // needed for static assets
 };
 
-export default nextConfig;
+module.exports = nextConfig;
