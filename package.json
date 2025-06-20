@@ -2,10 +2,9 @@
   "name": "sagenefys",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://www.sagenefysio.no",
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start",
     "lint": "next lint",
     "predeploy": "npm run build",
