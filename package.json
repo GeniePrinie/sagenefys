@@ -2,11 +2,14 @@
   "name": "sagenefys",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://www.sagenefysio.no",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
