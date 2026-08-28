@@ -5,6 +5,9 @@ import { PageHeading } from "./PageHeading";
 
 const EMAIL_PATTERN =
   /([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})/g;
+const MARKDOWN_LINK_PATTERN =
+  /\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g;
+const BOLD_PATTERN = /\*\*(.+?)\*\*/g;
 
 interface ContentImage {
   src: string;
@@ -26,7 +29,8 @@ interface ContentGridProps {
   className?: string;
 }
 
-function linkifyEmails(text: string): ReactNode[] {
+function linkifyEmails(text: string, keyPrefix: string): ReactNode[] {
+  EMAIL_PATTERN.lastIndex = 0;
   const nodes: ReactNode[] = [];
   let lastIndex = 0;
 
@@ -40,7 +44,7 @@ function linkifyEmails(text: string): ReactNode[] {
 
     nodes.push(
       <a
-        key={`${email}-${index}`}
+        key={`${keyPrefix}-email-${index}`}
         href={`mailto:${email}`}
         className="text-primary hover:underline"
       >
@@ -58,6 +62,83 @@ function linkifyEmails(text: string): ReactNode[] {
   return nodes;
 }
 
+function formatBoldAndEmails(text: string, keyPrefix: string): ReactNode[] {
+  BOLD_PATTERN.lastIndex = 0;
+  const nodes: ReactNode[] = [];
+  let lastIndex = 0;
+
+  for (const match of text.matchAll(BOLD_PATTERN)) {
+    const boldText = match[1];
+    const index = match.index ?? 0;
+
+    if (index > lastIndex) {
+      nodes.push(
+        ...linkifyEmails(text.slice(lastIndex, index), `${keyPrefix}-${index}`)
+      );
+    }
+
+    nodes.push(
+      <strong
+        key={`${keyPrefix}-bold-${index}`}
+        className="font-bold bg-amber-100 px-1"
+      >
+        {boldText}
+      </strong>
+    );
+
+    lastIndex = index + match[0].length;
+  }
+
+  if (lastIndex < text.length) {
+    nodes.push(
+      ...linkifyEmails(text.slice(lastIndex), `${keyPrefix}-tail`)
+    );
+  }
+
+  return nodes;
+}
+
+function formatInlineText(text: string): ReactNode[] {
+  MARKDOWN_LINK_PATTERN.lastIndex = 0;
+  const nodes: ReactNode[] = [];
+  let lastIndex = 0;
+
+  for (const match of text.matchAll(MARKDOWN_LINK_PATTERN)) {
+    const label = match[1];
+    const href = match[2];
+    const index = match.index ?? 0;
+
+    if (index > lastIndex) {
+      nodes.push(
+        ...formatBoldAndEmails(
+          text.slice(lastIndex, index),
+          `text-${index}`
+        )
+      );
+    }
+
+    nodes.push(
+      <a
+        key={`md-link-${index}`}
+        href={href}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-primary hover:underline"
+      >
+        {label}
+      </a>
+    );
+
+    lastIndex = index + match[0].length;
+  }
+
+  if (lastIndex < text.length) {
+    nodes.push(...formatBoldAndEmails(text.slice(lastIndex), "text-tail"));
+  }
+
+  return nodes;
+}
+
 function DescriptionBlock({ text }: { text: string }) {
   const lines = text
     .split("\n")
@@ -67,17 +148,17 @@ function DescriptionBlock({ text }: { text: string }) {
   const textLines = lines.filter((line) => !line.startsWith("- "));
 
   if (listItems.length === 0) {
-    return <p>{linkifyEmails(text.trim())}</p>;
+    return <p>{formatInlineText(text.trim())}</p>;
   }
 
   return (
     <Fragment>
       {textLines.length > 0 ? (
-        <p>{linkifyEmails(textLines.join(" "))}</p>
+        <p>{formatInlineText(textLines.join(" "))}</p>
       ) : null}
       <ul className="list-disc pl-5 space-y-1">
         {listItems.map((item, index) => (
-          <li key={index}>{linkifyEmails(item.slice(2).trim())}</li>
+          <li key={index}>{formatInlineText(item.slice(2).trim())}</li>
         ))}
       </ul>
     </Fragment>

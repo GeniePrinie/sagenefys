@@ -4,6 +4,7 @@ import Container from "../../components/ui/Container";
 import services from "../../data/services.json";
 import ContentGrid from "../../components/ui/ContentGrid";
 import { Metadata } from "next";
+import { stripMarkdown } from "@/lib/utils";
 
 export function generateStaticParams() {
   return services.map((service) => ({
@@ -23,7 +24,7 @@ export async function generateMetadata({
   if (!service) return {};
   return {
     title: `${service.title} | Sagene Fysioterapi`,
-    description: service.description.split(/\n\n+/)[0],
+    description: stripMarkdown(service.description.split(/\n\n+/)[0]),
   };
 }
 

@@ -20,7 +20,9 @@ export default function AboutPage() {
           width: 1000,
           height: 1000,
         }}
-        description="Vi er fysioterapeuter med lang erfaring innenfor allmennfysioterapi. Vi gir tjenester med høy kvalitet sentralt beliggende i hjertet av Sagene. Klinikken ligger på bakkeplan med god tilgjengelighet for alle. Vi tilbyr et bredt spekter av fysioterapitjenester uavhengig av type skade eller smerter du måtte ha."
+        description={`Vi er fysioterapeuter med lang erfaring innenfor allmennfysioterapi. Vi gir tjenester med høy kvalitet sentralt beliggende i hjertet av Sagene. Klinikken ligger på bakkeplan med god tilgjengelighet for alle. Vi tilbyr et bredt spekter av fysioterapitjenester uavhengig av type skade eller smerter du måtte ha.
+
+Alle våre terapeuter har driftsavtale, og vi følger [takstplakaten for fysioterapi](https://aktuelt.fysio.no/hubfs/Takstplakat%202026.pdf).`}
       />
     </Container>
   );
