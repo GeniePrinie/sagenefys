@@ -120,7 +120,7 @@ function ServiceImage({
 }) {
   return (
     <div
-      className={cn("col-span-full md:col-span-7 pb-8 md:pb-12", className)}
+      className={cn("col-span-full md:col-span-7", className)}
     >
       <Image
         src={image.src}
@@ -156,7 +156,7 @@ export default function ContentGrid({
       />
 
       {hasExtra && extraImage && extraDescription ? (
-        <div className="col-span-full grid grid-cols-12 mt-12 md:mt-0">
+        <div className="col-span-full grid grid-cols-12 mt-12">
           {extraTitle ? (
             <PageHeading
               title={extraTitle}
