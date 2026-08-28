@@ -9,9 +9,9 @@
   },
   {
     "id": 2,
-    "title": "Frisklivstrening",
+    "title": "Medisinsk treningsterapi i gruppe",
     "slug": "frisklivstrening",
-    "description": "Frisklivstrening tilbys ved klinikken for deg som trenger motivasjon og veiledning for å komme i gang med fysisk aktivitet. Fysisk aktivitet gir deg overskudd, bedre humør, og forebygger en rekke sykdommer. Ønsker du å komme i gang med fysisk aktivitet, men er litt usikker på hvordan?",
+    "description": "Medisinsk treningsterapi i gruppe er et tilrettelagt treningstilbud for deg som ønsker trygg og målrettet opptrening under veiledning av fysioterapeut. Treningen tilpasses den enkeltes funksjonsnivå, behov og mål, samtidig som du får motivasjon og fellesskap gjennom å trene sammen med andre.\n\nØvelsene kan bidra til å forbedre styrke, bevegelighet, balanse og utholdenhet, og er særlig godt egnet som en del av rehabilitering eller for å opprettholde og bedre fysisk funksjon. Du får veiledning underveis, slik at treningen gjennomføres på en trygg og hensiktsmessig måte.\n\nGruppetreningen passer for personer med ulike muskel- og skjelettplager og funksjonsutfordringer. Ta gjerne kontakt med oss dersom du ønsker å vite mer om tilbudet og om medisinsk treningsterapi i gruppe kan passe for deg.",
     "img": "/images/services/service2.jpg",
     "link": ""
   },
@@ -45,14 +45,33 @@
     "slug": "trykkbolgebehandling",
     "description": "Trykkbølgebehandling (ESWT) har vist seg å være en trygg og effektiv behandlingsform for en rekke kroniske tendinopatier. Akillestendinose, plantar fasciitt, jumpers knee, kalkskulder og tennisalbue er eksempler på noen av tilstandene som kan behandles effektivt ved hjelp av trykkbølge. Trykkbølgebehandling brukes som et alternativt behandlingsverktøy i forbindelse med vedvarende smerte i sener og bindevev som ikke har respondert på konservativ behandling. Trykkbølgebehandling kan i mange tilfeller erstatte kortisoninjeksjon eller kirurgi. Dersom man sliter med smerter på grunn av en langvarig seneskade man ikke blir kvitt, eller en skade som stadig blusser opp igjen kan trykkbølge være behandlingsmetoden som får skaden til å «løsne» og gir varige resultater.",
     "img": "/images/services/service6.jpg",
-    "link": ""
+    "link": "",
+    "extraTitle": "Fokuserte trykkbølger med PiezoWave²",
+    "extraImg": "/images/services/piezowave2.jpg",
+    "extraDescription": "Hos Sagene Fysioterapi benytter vi PiezoWave², et moderne system for behandling med fokuserte trykkbølger. Behandlingen gjør det mulig å rette mekaniske trykkbølger mot et avgrenset område i vevet, med mulighet for å tilpasse både behandlingsområde og dybde.\n\nFokuserte trykkbølger kan være aktuelt som en del av fysioterapeutisk behandling ved ulike muskel- og skjelettplager, blant annet ved langvarige smerter og enkelte sene- og muskellidelser. Behandlingen vurderes alltid individuelt og inngår ved behov som en del av en helhetlig behandlingsplan, som også kan omfatte undersøkelse, veiledning, øvelser og tilpasset trening.\n\nPiezoWave² benytter piezoelektrisk teknologi som gir en presis fokusering av trykkbølgene i ønsket behandlingsområde. Dette gjør det mulig å tilpasse behandlingen til den enkelte pasient og problemstilling.\n\nDin fysioterapeut vil vurdere om behandling med fokuserte trykkbølger kan være et relevant tiltak for deg."
   },
   {
     "id": 7,
     "title": "Terapibasseng trening ved Sagene bad",
     "slug": "Terapibasseng-trening-ved-sagene-bad",
-    "description": "Vi har gleden av å tilby våre brukere i bydelen trening ved Sagene bad. Vi har 12 grupper per uke på Sagene Bad med fysioterapi trening i basseng, så kallet Terapibad. Hver gruppe trener i 10 uker. Det er fysioterapeuter med driftsavtale med kommunen som driver gruppene, så prisen følger prislisten på Helse-Norge. Hver gruppe settes sammen ut fra funksjonsnivå og treningsintensitet med fokus på kondisjon, styrke og bevegelighet. Du kommer å innkalles til en undersøkelse hos en av våre fysioterapeuter innen du får tilbud om plass i en gruppe. Tilbudet passer særlig for brukere med: Gravid med bekkenløsning/ryggsmerter, Overvektig, Rygglidelse, Nakke/skulderlidelser, Fibromyalgi, Revmatiske sykdommer, Slagpasienter.",
+    "description": "Vi har gleden av å tilby våre brukere i bydelen trening ved Sagene bad. Vi har 12 grupper per uke på Sagene Bad med fysioterapi trening i basseng, så kallet Terapibad. Hver gruppe trener i 10 uker. Det er fysioterapeuter med driftsavtale med kommunen som driver gruppene, så prisen følger prislisten på Helse-Norge. Hver gruppe settes sammen ut fra funksjonsnivå og treningsintensitet med fokus på kondisjon, styrke og bevegelighet. Du kommer å innkalles til en undersøkelse hos en av våre fysioterapeuter innen du får tilbud om plass i en gruppe. Tilbudet passer særlig for brukere med: Gravid med bekkenløsning/ryggsmerter, Overvektig, Rygglidelse, Nakke/skulderlidelser, Fibromyalgi, Revmatiske sykdommer, Slagpasienter.\n\nTilbudet retter seg mot pasientgrupper som vurderes å ha god effekt av denne type trening. Vi bruker Sagene bad og treningen har en varighet på 10 uker. Det er 10 deltakere i hver gruppe.\n\nDu, din fastlege eller fysioterapeut kan ta kontakt for å undersøke om tilbudet passer for deg.\n\nHenvendelser sendes terapibad@bsa.oslo.kommune.no",
     "img": "/images/services/service7.jpg",
     "link": "https://sagenefolkebad.no/"
+  },
+  {
+    "id": 8,
+    "title": "Ultralyddiagnostikk ved muskel- og skjelettplager",
+    "slug": "ultralyddiagnostikk",
+    "description": "Hos Sagene Fysioterapi tilbyr en av våre Manuellterapeuter ultralyddiagnostikk som en del av undersøkelsen og vurderingen ved muskel- og skjelettplager. Med ultralyd kan vi undersøke ulike strukturer i kroppen i sanntid, blant annet muskler, sener, leddbånd, slimposer og enkelte ledd.\n\nUndersøkelsen kan gi verdifull informasjon om vevets struktur og bidra til en mer helhetlig vurdering av plagene. Ultralyd brukes i sammenheng med fysioterapeutens kliniske undersøkelse, sykehistorie og øvrige funn, og er ikke en erstatning for en grundig klinisk vurdering.\n\nVed behov kan undersøkelsen også bidra til å følge utviklingen over tid og gi et bedre grunnlag for videre oppfølging, behandling og tilpasset trening.\n\nDin fysioterapeut/manuellterapeut vil vurdere om ultralyddiagnostikk er relevant som en del av undersøkelsen og oppfølgingen av dine plager.",
+    "img": "/images/services/ultralyd.jpg",
+    "link": ""
+  },
+  {
+    "id": 9,
+    "title": "Psykomotorisk fysioterapi – når kropp og sinn henger sammen",
+    "slug": "psykomotorisk-fysioterapi",
+    "description": "Vi er glade for å kunne tilby psykomotorisk fysioterapi som en del av vårt behandlingstilbud. Hos oss har vi en kandidat med kompetanse innen psykomotorisk fysioterapi som tilbyr individuell og helhetlig oppfølging.\n\nKroppen påvirkes av hvordan vi har det. Stress, belastninger, langvarige smerter og utfordrende livssituasjoner kan blant annet gi økt muskelspenning, endret pust og kroppslig uro. Psykomotorisk fysioterapi tar utgangspunkt i sammenhengen mellom kropp, pust, spenning og følelser.\n\nBehandlingen tilpasses deg og dine behov. Gjennom samtale, bevegelse, øvelser og oppmerksomhet på kropp og pust jobber vi sammen for å skape økt kroppsbevissthet, bedre avspenning og en bedre forståelse av kroppens reaksjoner.\n\nPsykomotorisk fysioterapi kan være aktuelt for deg som opplever blant annet:\n\n- Langvarige smerter\n- Muskelspenninger og stivhet\n- Stress og kroppslig uro\n- Pusteutfordringer og anspent pust\n- Utmattelse og vedvarende belastning\n\nTa gjerne kontakt med oss dersom du ønsker å vite mer om psykomotorisk fysioterapi, eller om denne behandlingsformen kan være aktuell for deg.",
+    "img": "/images/services/psykomotorisk.jpg",
+    "link": ""
   }
 ]
