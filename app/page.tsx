@@ -51,13 +51,26 @@ export default function Home() {
       <Container className="pt-24">
         <div className="grid grid-cols-12">
           <PageHeading title="Hos sagene fysioterapi" paddingBottom="sm" />
-          <p className="col-start-1 col-span-full md:col-start-6 md:col-span-6">
-            Vi er fysioterapeuter med lang erfaring innenfor allmennfysioterapi.
-            Vi gir tjenester med høy kvalitet sentralt beliggende i hjertet av
-            Sagene. Klinikken ligger på bakkeplan med god tilgjengelighet for
-            alle. Vi tilbyr et bredt spekter av fysioterapitjenester uavhengig
-            av type skade eller smerter du måtte ha.
-          </p>
+          <div className="col-start-1 col-span-full md:col-start-6 md:col-span-6 space-y-4">
+            <p>
+              Vi er fysioterapeuter med lang erfaring innenfor allmennfysioterapi.
+              Vi gir tjenester med høy kvalitet sentralt beliggende i hjertet av
+              Sagene. Klinikken ligger på bakkeplan med god tilgjengelighet for
+              alle. Vi tilbyr et bredt spekter av fysioterapitjenester uavhengig
+              av type skade eller smerter du måtte ha.
+            </p>
+            <p>
+              Alle våre terapeuter har driftsavtale, og vi følger{" "}
+              <a
+                href="https://aktuelt.fysio.no/hubfs/Takstplakat%202026.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary hover:underline"
+              >
+                takstplakaten for fysioterapi
+              </a>.
+            </p>
+          </div>
         </div>
       </Container>
     </>

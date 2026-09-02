@@ -3,6 +3,7 @@ import Link from "next/link";
 import Container from "../components/ui/Container";
 import PageHeader from "../components/ui/PageHeader";
 import services from "../data/services.json";
+import { stripMarkdown } from "@/lib/utils";
 export const metadata = {
   title: "Tjenester | Sagene Fysioterapi",
   description:
@@ -37,7 +38,7 @@ export default function ServicesPage() {
                 {service.title}
               </h2>
               <p className="mt-2 line-clamp-2 text-black/70">
-                {service.description}
+                {stripMarkdown(service.description)}
               </p>
             </Link>
             <div className="mt-4">

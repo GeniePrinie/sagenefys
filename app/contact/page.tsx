@@ -24,7 +24,7 @@ export default function ContactPage() {
         }}
         description=""
       />
-      <div className="grid grid-cols-12">
+      <div className="grid grid-cols-12 mt-16">
         <p className="col-start-1 col-span-full md:col-start-6 md:col-span-6 pb-8">
           Har du spørsmål vedrørende våre tjenester eller ønsker å bestille en
           time? Nøl ikke med å kontakte oss på

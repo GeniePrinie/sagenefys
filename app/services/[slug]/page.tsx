@@ -4,6 +4,7 @@ import Container from "../../components/ui/Container";
 import services from "../../data/services.json";
 import ContentGrid from "../../components/ui/ContentGrid";
 import { Metadata } from "next";
+import { stripMarkdown } from "@/lib/utils";
 
 export function generateStaticParams() {
   return services.map((service) => ({
@@ -23,7 +24,7 @@ export async function generateMetadata({
   if (!service) return {};
   return {
     title: `${service.title} | Sagene Fysioterapi`,
-    description: service.description,
+    description: stripMarkdown(service.description.split(/\n\n+/)[0]),
   };
 }
 
@@ -52,6 +53,23 @@ export default async function ServicePage({ params }: PageProps) {
           priority: true,
         }}
         description={service.description}
+        extraTitle={"extraTitle" in service ? service.extraTitle : undefined}
+        extraImage={
+          "extraImg" in service && service.extraImg
+            ? {
+                src: service.extraImg,
+                alt:
+                  "extraTitle" in service
+                    ? service.extraTitle
+                    : "PiezoWave²",
+                fill: true,
+                sizes: "(max-width: 768px) 100vw, 50vw",
+              }
+            : undefined
+        }
+        extraDescription={
+          "extraDescription" in service ? service.extraDescription : undefined
+        }
       />
     </Container>
   );
